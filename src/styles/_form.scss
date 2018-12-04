@@ -3,10 +3,10 @@
 @import 'variables';
 
 .form-group {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25em;
   .form-group__label {
     letter-spacing: 0.2px;
-    font-size: 0.875rem;
+    font-size: 0.875em;
     color: $gray-400;
     font-weight: bold;
     line-height: 1.8;
@@ -14,7 +14,7 @@
 }
 .form-control {
   border-radius: 4px;
-  padding: 0.8125rem 1.5625rem;
+  padding: 0.8125em 1.5625em;
   border: 1px solid $gray-200;
   font-size: 1em;
   width: 100%;

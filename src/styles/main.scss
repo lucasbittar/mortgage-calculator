@@ -13,6 +13,14 @@
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 13px;
+  }
 }
 
 h1 {
@@ -45,6 +53,21 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 1.5625em;
+  position: relative;
+  &.results {
+    .calculator__main {
+      transform: translateX(-30%);
+      @media screen and (max-width: $breakpoint-md) {
+        transform: translateX(0%);
+      }
+    }
+    .calculator__results {
+      transform: translateX(80%);
+      @media screen and (max-width: $breakpoint-md) {
+        transform: translateX(0%) translateY(110%);
+      }
+    }
+  }
 }
 
 .calculator__main {
@@ -54,6 +77,15 @@ h2 {
   padding: 2.5em;
   width: 100%;
   max-width: 470px;
+  position: relative;
+  z-index: 1;
+  transition: max-width 300ms ease-out;
+  @media screen and (max-width: $breakpoint-lg) {
+    max-width: 55%
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    max-width: 100%;
+  }
 }
 
 .calculator__results {
@@ -61,6 +93,16 @@ h2 {
   padding: 2.5em;
   width: 100%;
   max-width: 300px;
+  position: absolute;
+  z-index: 0;
+  transition: max-width margin 300ms ease-out;
+  @media screen and (max-width: $breakpoint-lg) {
+    max-width: 35%;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    max-width: 100%;
+    margin-bottom: 1.875em;
+  }
   h1 {
     color: $gray-400;
     border: none;
