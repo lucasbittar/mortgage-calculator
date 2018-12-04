@@ -121,7 +121,7 @@ import { validateForm } from './validate-form'
   // Update form object as user inputs values
   const updateForm = inputValue => {
     let values = inputValue || {}
-    // When app first load, grab default values from range inputs
+    // When app first loads, grab default values from range inputs
     if (!inputValue) {
       formRangeElements.forEach(input => {
         // Grab input field to set range value

@@ -1,14 +1,19 @@
-var path = require('path');
+var debug = process.env.NODE_ENV !== 'production'
+var path = require('path')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
+// var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
+  mode: debug ? 'development' : process.env.NODE_ENV,
   entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
+    path: debug
+      ? path.resolve(__dirname, 'public')
+      : path.resolve(__dirname, 'build'),
+    filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'public')
   },
   module: {
     rules: [
@@ -26,8 +31,22 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader' ]
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
-  }
-};
+  },
+  plugins: debug
+    ? []
+    : [
+        new CopyWebpackPlugin([
+          {
+            from: path.resolve(__dirname, 'public/index.html'),
+            to: path.resolve(__dirname, 'build')
+          },
+          {
+            from: path.resolve(__dirname, 'public/favicon.ico'),
+            to: path.resolve(__dirname, 'build')
+          }
+        ])
+      ]
+}
