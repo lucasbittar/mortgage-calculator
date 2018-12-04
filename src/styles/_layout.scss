@@ -1,1 +1,13 @@
 // ConsumerAffairs - Layout
+
+@import 'variables';
+
+.row {
+  display: flex;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+.col {
+  padding: 0 $gutter;
+  flex: 1;
+}

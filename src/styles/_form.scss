@@ -1,0 +1,60 @@
+// ConsumerAffairs - Form
+
+@import 'variables';
+
+.form-group {
+  margin-bottom: 1.25rem;
+  .form-group__label {
+    letter-spacing: 0.2px;
+    font-size: 0.875rem;
+    color: $gray-400;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+}
+.form-control {
+  border-radius: 4px;
+  padding: 0.8125rem 1.5625rem;
+  border: 1px solid $gray-200;
+  font-size: 1em;
+  width: 100%;
+  transition: all 300ms ease-out;
+  &:focus {
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
+    border-color: $gray-400;
+    outline: none;
+  }
+}
+
+.form-group__prefix {
+  position: relative;
+  .form-prefix {
+    position: absolute;
+    top: 50%;
+    margin-top: -.6em;
+    left: 1em;
+  }
+  .form-control {
+    padding-left: 2.2em;
+  }
+}
+
+.form-group__range {
+  display: flex;
+  align-items: center;
+  .range {
+    width: 80%;
+    padding: 0 1em;
+    margin: 0 1em;
+  }
+  .range-value {
+    &:first-child {
+      min-width: 2em;
+    }
+  }
+  .form-control {
+    width: 20%;
+    margin-left: 1.5em;
+  }
+}

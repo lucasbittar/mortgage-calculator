@@ -3,10 +3,19 @@
 //
 // Colors
 //
-$blue-400: #005175;
-$blue-300: #0077c0;
-$blue-200: #1091cc;
 $blue-100: #eaf6fa;
+$blue-200: #1091cc;
+$blue-300: #0077c0;
+$blue-400: #005175;
+$gray-100: #cacaca;
+$gray-200: #cbcbcb;
+$gray-300: #d8d8d8;
+$gray-400: #3e3d3f;
 $red: #da3535;
 
-$primary: $blue-300;
+$c-primary: $blue-300;
+
+//
+// Layout
+//
+$gutter: 0.8em;

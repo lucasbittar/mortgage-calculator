@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>ConsumerAffairs - Mortgage Calculator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -20,7 +22,7 @@
                   <div class="range-value">1</div>
                   <input value="" type="range" class="range" max="40" min="1" steps="1" id="yearsOfMortgage" />
                   <div class="range-value">40</div>
-                  <input type="text" class="text form-control" value="" name="">
+                  <input type="text" class="form-control" value="" name="" disabled>
                 </div>
               </div>
             </div>
@@ -33,7 +35,7 @@
                   <div class="range-value">0.1</div>
                   <input value="" type="range" class="range" max="10" min="0.1" steps="0.1" id="rateOfInterest" />
                   <div class="range-value">10</div>
-                  <input type="text" class="text form-control" value="" name="">
+                  <input type="text" class="form-control" value="" name="" disabled>
                 </div>
               </div>
             </div>
@@ -43,7 +45,7 @@
               <div class="form-group">
                 <label class="form-group__label">Loan Amount</label>
                 <div class="form-group__prefix">
-                  <input type="text" class="text form-control" value="" id="loanAmount">
+                  <input type="text" class="form-control" value="" id="loanAmount">
                   <div class="form-prefix">$</div>
                 </div>
               </div>
@@ -54,7 +56,7 @@
               <div class="form-group">
                 <label class="form-group__label">Annual Tax</label>
                 <div class="form-group__prefix">
-                  <input type="text" class="text form-control" value="" id="annualTax">
+                  <input type="text" class="form-control" value="" id="annualTax">
                   <div class="form-prefix">$</div>
                 </div>
               </div>
@@ -63,7 +65,7 @@
               <div class="form-group">
                 <label class="form-group__label">Annual Insurance</label>
                 <div class="form-group__prefix">
-                  <input type="text" class="text form-control" value="" id="annualInsurance">
+                  <input type="text" class="form-control" value="" id="annualInsurance">
                   <div class="form-prefix">$</div>
                 </div>
               </div>
@@ -77,22 +79,22 @@
         </form>
       </div>
       <div class="calculator__results">
-        <h2>Your results</h2>
+        <h1>Your results</h1>
         <div class="result">
-          <div class="results__value">Principle & Interest</div>
-          <div class="results__value">$ --</div>
+          <div class="result__label">Principle & Interest</div>
+          <div class="result__value">$ --</div>
         </div>
         <div class="result">
-          <div class="results__value">Tax</div>
-          <div class="results__value">$ --</div>
+          <div class="result__label">Tax</div>
+          <div class="result__value">$ --</div>
         </div>
         <div class="result">
-          <div class="results__value">Insurance</div>
-          <div class="results__value">$ --</div>
+          <div class="result__label">Insurance</div>
+          <div class="result__value">$ --</div>
         </div>
         <div class="result result__footer">
-          <div class="results__value">Total Monthly Payment</div>
-          <div class="results__value">$ --</div>
+          <div class="result__label">Total Monthly Payment</div>
+          <div class="result__value">$ --</div>
         </div>
       </div>
     </div>
