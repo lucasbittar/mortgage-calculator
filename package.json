@@ -1,0 +1,17 @@
+{
+  "name": "mortgage-calculator",
+  "version": "1.0.0",
+  "description": "Simple mortgage calculator for ConsumerAffairs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "Lucas Bittar Magnani <lucasbittar.magnani@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10"
+  }
+}

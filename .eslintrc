@@ -1,0 +1,8 @@
+{
+  "jsx": true,
+  "templateStrings": true,
+  "semi": "always",
+  "plugins": [
+    "react"
+  ]
+}
