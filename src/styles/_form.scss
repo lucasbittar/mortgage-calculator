@@ -11,6 +11,21 @@
     font-weight: bold;
     line-height: 1.8;
   }
+  .error-message {
+    color: $red;
+    font-size: 0.8em;
+    padding-top: 0.3em;
+    display: none;
+    font-weight: bold;
+  }
+  &.error {
+    .error-message {
+      display: block;
+    }
+    .form-control {
+      border-color: $red;
+    }
+  }
 }
 .form-control {
   border-radius: 4px;
@@ -25,6 +40,9 @@
     box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
     border-color: $gray-400;
     outline: none;
+  }
+  &:disabled {
+    border-color: transparentize($gray-200, 0.45);
   }
 }
 
@@ -50,8 +68,10 @@
   }
   .range-value {
     opacity: 0.5;
+    margin-left: 0.5em;
     &:first-child {
-      min-width: 1.2em;
+      min-width: 1.8em;
+      margin: 0;
     }
   }
   .form-control {

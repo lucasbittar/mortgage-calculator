@@ -23,6 +23,5 @@ export const insurance = ({ annualInsurance }) =>
   (annualInsurance / 12).toFixed(2)
 
 // Monthly payment
-export const monthlyPayment = (principleInterest, tax, insurance) => {
-  return principleInterest + tax + insurance
-}
+export const monthlyPayment = (principleInterest, tax, insurance) =>
+  principleInterest + tax + insurance

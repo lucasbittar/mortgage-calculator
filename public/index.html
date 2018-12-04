@@ -20,7 +20,7 @@
                 <label class="form-group__label">Years of mortgage</label>
                 <div class="form-group__range">
                   <div class="range-value">1</div>
-                  <input value="" type="range" class="range" max="40" min="1" step="1" id="yearsOfMortgage" />
+                  <input value="" type="range" class="range" value="20" max="40" min="1" step="1" id="yearsOfMortgage" />
                   <div class="range-value">40</div>
                   <input type="text" class="form-control" value="" name="" disabled>
                 </div>
@@ -33,7 +33,7 @@
                 <label class="form-group__label">Rate of interest (%)</label>
                 <div class="form-group__range">
                   <div class="range-value">0.1</div>
-                  <input value="" type="range" class="range" max="10" min="0.1" step="0.10" id="interestRate" />
+                  <input value="" type="range" class="range" max="10" value="5" min="0.1" step="0.10" id="interestRate" />
                   <div class="range-value">10</div>
                   <input type="text" class="form-control" value="" name="" disabled>
                 </div>
@@ -48,6 +48,7 @@
                   <input type="text" class="form-control" value="" id="loanAmount">
                   <div class="form-prefix">$</div>
                 </div>
+                <div class="error-message">Loan Amount is mandatory</div>
               </div>
             </div>
           </div>
@@ -59,6 +60,7 @@
                   <input type="text" class="form-control" value="" id="annualTax">
                   <div class="form-prefix">$</div>
                 </div>
+                <div class="error-message">Annual Tax is mandatory</div>
               </div>
             </div>
             <div class="col">
@@ -68,6 +70,7 @@
                   <input type="text" class="form-control" value="" id="annualInsurance">
                   <div class="form-prefix">$</div>
                 </div>
+                <div class="error-message">Annual Insurance is mandatory</div>
               </div>
             </div>
           </div>
