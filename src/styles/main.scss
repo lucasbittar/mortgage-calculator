@@ -67,6 +67,9 @@ h2 {
         transform: translateX(0%) translateY(110%);
       }
     }
+    .result__value {
+      opacity: 1 !important;
+    }
   }
 }
 
@@ -79,9 +82,10 @@ h2 {
   max-width: 470px;
   position: relative;
   z-index: 1;
-  transition: max-width 300ms ease-out;
+  transition: all 300ms ease-out;
+  transition-property: max-width, transform;
   @media screen and (max-width: $breakpoint-lg) {
-    max-width: 55%
+    max-width: 55%;
   }
   @media screen and (max-width: $breakpoint-md) {
     max-width: 100%;
@@ -95,7 +99,7 @@ h2 {
   max-width: 300px;
   position: absolute;
   z-index: 0;
-  transition: max-width margin 300ms ease-out;
+  transition: all 300ms ease-out;
   @media screen and (max-width: $breakpoint-lg) {
     max-width: 35%;
   }
@@ -120,7 +124,7 @@ h2 {
       font-size: 1.125em;
       opacity: 0.2;
       font-weight: bold;
-      padding-top: .3em;
+      padding-top: 0.3em;
     }
   }
   .result__footer {
@@ -140,6 +144,7 @@ h2 {
   outline: none;
   cursor: pointer;
   transition: all 300ms ease-out;
+  transition-property: background;
 }
 .btn-primary {
   background: $c-primary;

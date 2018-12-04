@@ -10,7 +10,7 @@
 
   <div class="wrapper">
     <h1>Mortgage Calculator</h1>
-    <div class="calculator results">
+    <div class="calculator">
       <div class="calculator__main">
         <h2>Change values to calculate your results</h2>
         <form id="mortgageCalculator">
@@ -20,7 +20,7 @@
                 <label class="form-group__label">Years of mortgage</label>
                 <div class="form-group__range">
                   <div class="range-value">1</div>
-                  <input value="" type="range" class="range" max="40" min="1" steps="1" id="yearsOfMortgage" />
+                  <input value="" type="range" class="range" max="40" min="1" step="1" id="yearsOfMortgage" />
                   <div class="range-value">40</div>
                   <input type="text" class="form-control" value="" name="" disabled>
                 </div>
@@ -33,7 +33,7 @@
                 <label class="form-group__label">Rate of interest (%)</label>
                 <div class="form-group__range">
                   <div class="range-value">0.1</div>
-                  <input value="" type="range" class="range" max="10" min="0.1" steps="0.1" id="rateOfInterest" />
+                  <input value="" type="range" class="range" max="10" min="0.1" step="0.10" id="interestRate" />
                   <div class="range-value">10</div>
                   <input type="text" class="form-control" value="" name="" disabled>
                 </div>
@@ -73,7 +73,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <button class="btn btn-block btn-primary" id="buttonCalculate">Calculate</button>
+              <button class="btn btn-block btn-primary" type="submit" id="buttonCalculate">Calculate</button>
             </div>
           </div>
         </form>
@@ -82,19 +82,19 @@
         <h1>Your results</h1>
         <div class="result">
           <div class="result__label">Principle & Interest</div>
-          <div class="result__value">$ --</div>
+          <div class="result__value" id="resultPrincipleInterest">$ --</div>
         </div>
         <div class="result">
           <div class="result__label">Tax</div>
-          <div class="result__value">$ --</div>
+          <div class="result__value" id="resultTax">$ --</div>
         </div>
         <div class="result">
           <div class="result__label">Insurance</div>
-          <div class="result__value">$ --</div>
+          <div class="result__value" id="resultInsurance">$ --</div>
         </div>
         <div class="result result__footer">
           <div class="result__label">Total Monthly Payment</div>
-          <div class="result__value">$ --</div>
+          <div class="result__value" id="resultTotal">$ --</div>
         </div>
       </div>
     </div>

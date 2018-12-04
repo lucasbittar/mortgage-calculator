@@ -19,6 +19,7 @@
   font-size: 1em;
   width: 100%;
   transition: all 300ms ease-out;
+  transition-property: box-shadow, border-color;
   &:focus {
     border-radius: 4px;
     box-shadow: 0 0 4px 0 rgba(62, 61, 63, 0.62);
@@ -32,7 +33,7 @@
   .form-prefix {
     position: absolute;
     top: 50%;
-    margin-top: -.6em;
+    margin-top: -0.6em;
     left: 1em;
   }
   .form-control {
@@ -46,15 +47,17 @@
   .range {
     width: 80%;
     padding: 0 1em;
-    margin: 0 1em;
   }
   .range-value {
+    opacity: 0.5;
     &:first-child {
-      min-width: 2em;
+      min-width: 1.2em;
     }
   }
   .form-control {
     width: 20%;
-    margin-left: 1.5em;
+    margin-left: 1em;
+    padding: 0.8125em 0.5em;
+    text-align: center;
   }
 }
