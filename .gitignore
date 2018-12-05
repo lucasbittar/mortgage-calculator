@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+*/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+*/build
+
+# VIM Swap files
+*.swp
