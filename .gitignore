@@ -6,8 +6,8 @@
 /coverage
 
 # production
-/build
-*/build
+# /build
+# */build
 
 # VIM Swap files
 *.swp
