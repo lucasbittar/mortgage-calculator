@@ -4,9 +4,12 @@
   "description": "Simple mortgage calculator for ConsumerAffairs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "heroku-postbuild":
+      "npm install --only=dev && npm install && npm run build",
     "start": "webpack-dev-server",
-    "start:build": "NODE_ENV=production webpack-dev-server --content-base build/",
+    "start:build":
+      "NODE_ENV=production webpack-dev-server --content-base build/",
     "build": "NODE_ENV=production webpack"
   },
   "author": "Lucas Bittar Magnani <lucasbittar.magnani@gmail.com>",
@@ -28,8 +31,10 @@
     "babel-preset-es2015": "6.24.1",
     "copy-webpack-plugin": "4.6.0",
     "css-loader": "1.0.1",
+    "express": "4.16.4",
     "extract-text-webpack-plugin": "3.0.2",
     "node-sass": "4.10.0",
+    "nodemon": "1.18.7",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "uglifyjs-webpack-plugin": "2.0.1",
