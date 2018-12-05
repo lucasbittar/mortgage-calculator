@@ -11,7 +11,7 @@ Run ``` npm run dev ``` to start a server locally on [http://localhost:8080](htt
 Run ``` npm run build ``` create a production-ready build
 
 ## Live Project
-[https://friendly-tesla-63ffdd.netlify.com](Deployed to Netlify)
+[Deployed to Netlify](https://friendly-tesla-63ffdd.netlify.com)
 
 #### Author
 [Lucas Bittar Magnani](https://lucasbittar.rocks)
